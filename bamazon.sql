@@ -3,9 +3,11 @@ CREATE DATABASE bamazon;
 
 USE bamazon;
 
-CREATE TABLE stuff(
+CREATE TABLE products(
     id INT NOT NULL AUTO_INCREMENT,
-    bids VARCHAR(255),
-    items VARCHAR(255),
+    product_name VARCHAR(255),
+    department_name VARCHAR(255),
+    price DECIMAL (10,2),
+    quantity INTEGER(10),
     PRIMARY KEY(id)
 );
